@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+
+        <div class="nav">
+            <div class="time">12:02</div>
+
+            <div class="top-left">
+                <i class="material-icons">alarm</i>
+                <i class="fa fa-wifi"></i> &#9699;
+                <i class="fa fa-battery"></i>
+            </div>
+        </div>
+
+            <h2>Temperature Convertor🌡️</h2>
+            <p>Result (Celsius)</p>
+            <div id="result"></div>
+
+            <div class="main">
+                <div>
+                <label for="Deg">Degree:</label>
+                <input type="number" class="inp" placeholder="0" id="inp">
+                </div>
+
+                <div>
+                    <label for="type">Type:</label>
+                    <select name="Type" id="unit" title="type">
+                        <option value="fahrenheit">Fahrenheit</option>
+                        <option value="celsius">Celsius</option>
+                        <option value="kelvin">Kelvin</option>
+                    </select>
+                </div>
+            </div>
+
+        <button type="submit" id="convert" onclick="convertTemperature()">Convert</button>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
